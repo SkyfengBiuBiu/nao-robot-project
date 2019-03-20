@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Main page</title>
+    <script type='text/javascript' src='js/jquery-2.1.4.min.js'></script>
+    <script type='text/javascript' src='js/main.js'></script>
+	<script type='text/javascript' src='js/jquery.timelinr-0.9.6.js'></script>
+	<script type='text/javascript' src='js/index.js'></script>
+	<script src='http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+	<script>
+		$(function(){
+			$().timelinr({
+				arrowKeys: 'true'
+			})
+		});
+	</script>
+	<link rel='stylesheet' href='http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css'> 
+     <link rel='stylesheet' type='text/css' href='css/style.css'>
+	 <link rel='stylesheet' type='text/css' href='css/style1.css'>
+	 <link rel='stylesheet' type='text/css' href='css/button.css'>
+	 <link rel='stylesheet' type='text/css' href='css/textarea.css'>
+	 </head>
+<body>
+
+<div class='box box-1'>
+	<div class='content' style=''>
+    <div id='target1' class='quartercircle divLeft' style='' onclick='test1()'>
+        <a href='#' style='background: url(left.png) no-repeat center;'></a>
+    </div>
+    <div id='target2' class='quartercircle divTop' style='' onclick='test2()'>
+        <a href='#' style='background: url(top.png) no-repeat center;'></a>
+    </div>
+    <div id='target3' class='quartercircle divRight' style='' onclick='test3()'>
+        <a href='#' style='background: url(left.png) no-repeat center;'></a>
+    </div>
+    <div id='target4' class='quartercircle divBottom' style='' onclick='test4()'>
+        <a href='#' style='display:block;position:absolute;z-index:50;background: url(bottom.png) no-repeat center;'></a>
+    </div>
+    <div class='circle' style='' onclick='test5()'><span style=''>Stop</span></div>
+</div>
+</div>
+
+<div id='box3' class='box box-3'>
+<div id='colorBG' class='seColor'>
+<b>Please select color for LED</b>
+  <select id='seC'>
+    <option value='1'>White</option>
+    <option value='2'>Red</option>
+    <option value='3'>Green</option>
+	<option value='4'>Blue</option>
+    <option value='5'>Yellow</option>
+    <option value='6'>Magenta</option>
+	<option value='7'>Cyan</option>
+  </select>
+  </div>
+  <div id='ledBG' class='seLED'>
+  <b>Please specify the type of LED</b>
+  <select id='seL'>
+    <option value='1'>left</option>
+    <option value='2'>Right</option>
+    <option value='3'>All</option>
+  </select>
+  </div>
+  <div id='timeline'>
+  <b>Please specify the duration of LED</b>
+		<ul id='dates'>
+			<li><a href='#1900' onclick='test9()'>0.5s</a></li>
+			<li><a href='#1930' onclick='test10()'>1.0s</a></li>
+			<li><a href='#1944' onclick='test11()'>1.5s</a></li>
+			<li><a href='#1950' onclick='test12()'>2.0s</a></li>
+			<li><a href='#1971' onclick='test13()'>2.5s</a></li>
+			<li><a href='#1977' onclick='test14()'>3.0s</a></li>
+			<li><a href='#1989' onclick='test15()'>3.5s</a></li>
+			<li><a href='#1999' onclick='test16()'>4.0s</a></li>
+			<li><a href='#2001' onclick='test17()'>4.5s</a></li>
+			<li><a href='#2011' onclick='test18()'>5.0s</a></li>
+		</ul>
+		<ul id='issues'>
+			<li id='1900'/>
+			<li id='1930'/>
+			<li id='1944'/>
+			<li id='1950'/>		
+			<li id='1971'/>		
+			<li id='1977'/>
+			<li id='1989'/>	
+			<li id='1999'/>
+			<li id='2001'/>
+			<li id='2011'/>
+		</ul>
+	</div>
+	<button id='colorButton' class='button button-3d button-action button-pill' onclick='test19()'>Launch</button>
+</div>
+
+<div class='box box-2'>
+	<dl><div class='action1' onclick='test6()'><img src='images/picture.png'></div></dl>
+	<dl><div class='action2' onclick='test24()'><img src='images/say.png'></dl>
+	<dl><div class='action3' onclick='test25()'><img src='images/move_arm.png' ></dl>
+	<dl><div class='action4' onclick='test26()'><img src='images/sit_ground.png' ></dl>
+	<dl><div class='action5' onclick='test27()'><img src='images/stand.png'></dl>
+	<dl><div class='action8' onclick='test30()'><img src='images/play_sound.png'></dl>
+
+</div>
+<div class='box box-4'>
+<div class='demo demo1'>
+<b>Please type some texts to let robot to speech:</b>
+  <div class='css'>
+    <label for='d1'>Text to Speech</label>
+    <input id='d1' type='text' />
+  </div>
+   <button id='textButton' class='button button-3d button-action button-pill' onclick='test20()'>Launch</button>
+</div>
+<div class='look_table'>
+<b>Please choose one posture to look:</b>
+<div id='btns'>
+<div class='btn-toolbar' role='toolbar'>
+	<div class='btn-group'>
+		<button type='button' class='btn btn-default' onclick='test21()'>look Forward</button>
+		<button type='button' class='btn btn-default' onclick='test22()'>look Down</button>
+		<button type='button' class='btn btn-default' onclick='test23()'>look Around</button>
+	</div>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>

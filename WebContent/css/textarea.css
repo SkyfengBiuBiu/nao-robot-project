@@ -1,0 +1,69 @@
+
+.demo {
+ margin:30px auto 20px 100px;
+  background: #eee;
+}
+
+
+.demo:nth-child(odd) {
+  background: none;
+}
+
+.demo:last-child {
+  border: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input[type='text'] {
+  width: 200px;
+  padding: 7px 5px 10px 60px;
+  font-size: 12px;
+  color: #555;
+  border: 1px solid #aaaaaa;
+  background-color: #fff;
+}
+
+.css {
+  display: inline-block;
+  position: relative;
+  margin: 10px 5px 0 0;
+}
+
+.css input {
+  transition: .1s all linear;
+}
+
+.css label {
+  position: absolute;
+  top: 9px;
+  left: 15px;
+  font-size: 12px;
+  color: #aaa;
+  transition: .1s all linear;
+  cursor: text;
+}
+
+.demo1 .css.active input {
+  padding-left: 45px;
+}
+
+.demo1 .css.active label {
+  left: 6px;
+  opacity: .5;
+}
